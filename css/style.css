@@ -9,3 +9,61 @@ img {
     max-width: 100%;
 }
 /* /RESET */
+
+/* UTILITY */
+:root {
+    --navigator: #FF6900;
+    --red-tag: #FF0000;
+    --green-tag: #008000;
+    --footer: #1A1A1A;
+}
+/* /UTILITY */
+
+/* COMMON */
+header {
+    width: 100%;
+}
+
+header nav {
+    background-color: var(--navigator);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+/* /COMMON */
+
+/* HEADER */
+nav .categories {
+    align-self: center;
+}
+
+nav .menu {
+    align-self: center;
+}
+
+nav .logo {
+    align-self: center;
+    width: 10%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    padding: 0 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+/* /HEADER */
+
+/* MAIN */
+/* /MAIN */
+
+/* FOOTER */
+/* /FOOTER */
