@@ -22,20 +22,28 @@ img {
 /* COMMON */
 header {
     width: 100%;
+    background-color: var(--navigator);
 }
 
-header nav {
-    background-color: var(--navigator);
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
+main {
+    width: 100%;
 }
 
 /* /COMMON */
 
 /* HEADER */
+header nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin: 0 auto;
+    box-shadow: 0 0.5px rgba(0, 0, 0, 0.3);
+}
+
 nav .categories {
     align-self: center;
+    font-weight: bold;
 }
 
 nav .menu {
@@ -63,6 +71,88 @@ a {
 /* /HEADER */
 
 /* MAIN */
+main .container {
+    margin: 0 auto;
+    margin-top: 3em;
+    width: 80%;
+    column-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .article {
+    width: calc(100% / 3 - 10px);    
+}
+
+.first-sub-section {
+    position: relative;
+}
+
+.back-image {
+    display: none;
+}
+
+.first-sub-section:hover .back-image {
+    display: inline-block;
+}
+
+.first-sub-section:hover .front-image {
+    display: none;
+}
+
+.wishlist {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    line-height: 30px;
+}
+
+.wishlist:hover {
+    color: red;
+}
+
+.tags-list {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+
+.tag {
+    padding: 5px;
+    color: white;
+    font-size: .8rem;
+}
+
+.discount {
+    background-color: red;
+}
+
+.sustainability {
+    background-color: green;
+}
+
+.brand {
+    font-size: .8rem;
+}
+
+.title {
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
+.price {
+    font-size: .8rem;
+    color: red;
+}
+
+del {
+    font-size: .8rem;
+}
 /* /MAIN */
 
 /* FOOTER */
